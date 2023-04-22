@@ -19,7 +19,7 @@
         <title>Home</title>
     </head>
     <body>
-        <jsp:include page="navbar/navbar.jsp" />
+        <jsp:include page="/navbar.jsp" />
         <%
             String driver = "com.mysql.jdbc.Driver";
             String connectionUrl = "jdbc:mysql://127.0.0.1:3306/";
@@ -63,7 +63,7 @@
                     }
                 %>
             </div>
-            <jsp:include page="footer/footer.jsp"/>
+            <jsp:include page="/footer.jsp"/>
 
     </body>
 </html>

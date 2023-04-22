@@ -1,16 +1,18 @@
-<%@page import="java.sql.DriverManager"%>
-<%@page import="java.sql.ResultSet"%>
-<%@page import="java.sql.Statement"%>
-<%@page import="java.sql.Connection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%@page import="java.sql.*" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>About Mahido Page</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/IdrsProject/index.css">
+        <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">-->
+        <link rel="stylesheet" href="/IdrsProject/index.css">
+        <title>Home</title>
     </head>
     <body>
-        <jsp:include page="../navbar/navbar.jsp" />
+        <jsp:include page="/navbar.jsp" />
         <%
             String driver = "com.mysql.jdbc.Driver";
             String connectionUrl = "jdbc:mysql://127.0.0.1:3306/";
@@ -24,8 +26,8 @@
             }
 
         %>
-
-        <%            try {
+        <%
+            try {
                 Connection con = DriverManager.getConnection(connectionUrl + database, userid, password);
                 if (con != null) {
                     System.out.println("Connected to the database student");
@@ -43,7 +45,7 @@
                     }
                 %>
                 <div class="card-body">
-                    <%                        String sql1 = "SELECT * FROM `about_blog`";
+                    <%                        String sql1 = "SELECT * FROM `schedule_blog`";
                         resultSet = statement.executeQuery(sql1);
                         while (resultSet.next()) {
                     %>
@@ -59,6 +61,10 @@
                 %>
             </div>
         </div>
-        <jsp:include page="../footer/footer.jsp"/>
+        <jsp:include page="/footer.jsp"/>
+
     </body>
+    <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>-->
 </html>
+

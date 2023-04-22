@@ -13,7 +13,7 @@
         <title>Admin Page</title>
     </head>
     <body>
-        <jsp:include page="../navbar/navbaradmin.jsp" />
+        <jsp:include page="/navbaradmin.jsp" />
         <div class="container">
             <h1>test admin page</h1>
             <h1>Go to Dashboard Idrs Admin</h1>

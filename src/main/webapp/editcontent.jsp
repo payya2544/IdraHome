@@ -12,7 +12,7 @@
         <title>Edit Page</title>
     </head>
     <body>
-        <jsp:include page="../../navbar/navbaradmin.jsp" />
+        <jsp:include page="/navbaradmin.jsp" />
         <%
             String driver = "com.mysql.jdbc.Driver";
             String connectionUrl = "jdbc:mysql://127.0.0.1:3306/";

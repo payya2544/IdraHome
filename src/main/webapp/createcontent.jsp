@@ -44,19 +44,19 @@
                         int executeUpdate = ps.executeUpdate();
                         if (executeUpdate != 0) {
                             out.println("Article Published Successfully");
-                            response.sendRedirect("index.jsp");
+                            response.sendRedirect("setting.jsp");
                         } else {
                             out.println("Failed to submit the data");
                         }
                     } else {
-                        response.sendRedirect("index.jsp?emptyFields");
+                        response.sendRedirect("setting.jsp?emptyFields");
                     }
                 } catch (SQLException e) {
                     out.println("Failed to connect to the server");
                     e.printStackTrace();
                 }
             } else {
-                response.sendRedirect("index.jsp?invalidRequest");
+                response.sendRedirect("setting.jsp?invalidRequest");
             }
         %>
     </body>

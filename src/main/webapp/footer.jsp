@@ -44,11 +44,11 @@
                 <div class="footer-item">
                     <h2>Link</h2>
                     <ul class="footer-item">
-                        <li><a href="../">Home</a></li>
-                        <li><a href="#">Schedule</a></li>
-                        <li><a href="#">Conference Info</a></li>
-                        <li><a href="#">About Mahidol</a></li>
-                        <li><a href="#">Register</a></li>
+                        <li><a href="index.jsp/">Home</a></li>
+                        <li><a href="SchedulePage.jsp">Schedule</a></li>
+                        <li><a href="ConferenceInfoPage.jsp">Conference Info</a></li>
+                        <li><a href="AboutMahidolPage.jsp">About Mahidol</a></li>
+                        <li><a href="RegisterPage.jsp">Register</a></li>
                     </ul>
                 </div>
                 <div class="footer-item">
@@ -57,7 +57,7 @@
                         <li><a href="#">999 Phuttamonthon 4 Road, Salaya,
                                             Nakhon Pathom 73170 Thailand</a></li>
                         <li><a>+66 (0) 2849-6000</a></li>
-                        <li><a>Our Location</a></li>
+                       
                     </ul>
                 </div>
             </div>

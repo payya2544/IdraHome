@@ -14,8 +14,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Login Page</title>
-        <!--        <link rel="stylesheet" href="/IdrsProject/login/newcss.css">-->
-        <link rel="stylesheet" href="../login/login.css">
+        <link rel="stylesheet" href="/login.css">
     </head>
 
     <body>
@@ -57,18 +56,11 @@
                                 <label for="password"><i class="input-password"></i></label> 
                                 <input type="password" name="password" id="password" placeholder="Password" />
                             </div>
-                            <div class="iform-group">
-                                <select class="form-select" name="position" id="form-select"aria-label="Default select example">
-                                    <option selected>Select Position</option>
-                                    <option value="Admin1">Admin1</option>
-                                    <option value="Admin1">Admin2</option>
-                                    <option value="Employee">Employee</option>
-                                </select>
-                            </div>
+       
 
                             <div class="form-group form-button">
 
-                                <a href="../admin/LinkIn.jsp" class="form-submit">
+                                <a href="/admin.jsp" class="form-submit">
                                     Submit
                                 </a>
                             </div>

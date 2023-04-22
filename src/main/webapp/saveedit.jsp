@@ -48,7 +48,7 @@
                     int executeUpdate = ps.executeUpdate();
                     if (executeUpdate != 0) {
                         out.println("Article updated successfully");
-                        response.sendRedirect("index.jsp");
+                        response.sendRedirect("setting.jsp");
                     } else {
                         out.println("Failed to update the data");
                     }
@@ -61,7 +61,7 @@
                     out.println(e.getMessage());
                 }
             } else {
-                response.sendRedirect("index.jsp?invalidRequest");
+                response.sendRedirect("setting.jsp?invalidRequest");
             }
         %>
         <h1>Hello World!</h1>

@@ -12,7 +12,7 @@
         <title>Edit Page</title>
     </head>
     <body>
-        <jsp:include page="../../navbar/navbaradmin.jsp" />
+        <jsp:include page="/navbaradmin.jsp" />
         <br>
         <div class="container">          
             <form action="createcontent.jsp" method="POST">

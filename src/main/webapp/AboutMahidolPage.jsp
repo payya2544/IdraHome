@@ -1,6 +1,5 @@
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.ResultSet"%>
-<%@page import="com.mycompany.idrsproject.DBConnection"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -8,10 +7,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Conference Info Page</title>
+        <title>About Mahido Page</title>
     </head>
     <body>
-        <jsp:include page="../navbar/navbar.jsp" />
+        <jsp:include page="/navbar.jsp" />
         <%
             String driver = "com.mysql.jdbc.Driver";
             String connectionUrl = "jdbc:mysql://127.0.0.1:3306/";
@@ -25,6 +24,7 @@
             }
 
         %>
+
         <%            try {
                 Connection con = DriverManager.getConnection(connectionUrl + database, userid, password);
                 if (con != null) {
@@ -43,7 +43,7 @@
                     }
                 %>
                 <div class="card-body">
-                    <%                        String sql1 = "SELECT * FROM `conference_blog`";
+                    <%                        String sql1 = "SELECT * FROM `about_blog`";
                         resultSet = statement.executeQuery(sql1);
                         while (resultSet.next()) {
                     %>
@@ -59,7 +59,6 @@
                 %>
             </div>
         </div>
-        <jsp:include page="../footer/footer.jsp"/>
-
+        <jsp:include page="/footer.jsp"/>
     </body>
 </html>

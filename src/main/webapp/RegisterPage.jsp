@@ -3,7 +3,6 @@
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
-<%@page import="java.sql.Connection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,7 +11,7 @@
         <title>Register Page</title>
     </head>
     <body>
-        <jsp:include page="../navbar/navbar.jsp" />
+        <jsp:include page="/navbar.jsp" />
         <%
             String driver = "com.mysql.jdbc.Driver";
             String connectionUrl = "jdbc:mysql://127.0.0.1:3306/";
@@ -90,7 +89,7 @@
 
 </div>
 <br>
-<jsp:include page="../footer/footer.jsp"/>
+<jsp:include page="/footer.jsp"/>
 
 </body>
 </html>

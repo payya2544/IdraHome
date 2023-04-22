@@ -14,7 +14,7 @@
 
     </head>
     <body>
-        <jsp:include page="../../navbar/navbaradmin.jsp" />
+        <jsp:include page="/navbaradmin.jsp" />
         
         <%
             String driver = "com.mysql.jdbc.Driver";
@@ -38,7 +38,7 @@
         <div class="container">
             <h1>Settings</h1>
 
-            <form method="post" action="index.jsp" name="changePage">
+            <form method="post" action="setting.jsp" name="changePage">
                 <select id="page" name="page" onchange="return setValue();">
                     <option value="/">Select Page Edit</option>
                     <option value="wc_blog">Home</option>
@@ -63,7 +63,7 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table  table-hover" style="min-width: 845px">
-                                    <thead>
+                                     <thead>
                                         <tr align='center'>
                                             <th>ID</th>
                                             <th>Title</th>

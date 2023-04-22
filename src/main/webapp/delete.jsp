@@ -36,18 +36,18 @@
                         int executeUpdate = ps.executeUpdate();
                         if (executeUpdate != 0) {
                             out.println("Article Delete Successfully");
-                            response.sendRedirect("index.jsp");
+                            response.sendRedirect("setting.jsp");
                         } else {
-                            response.sendRedirect("index.jsp?deleteFailed");
+                            response.sendRedirect("setting.jsp?deleteFailed");
                         }
                     } catch (SQLException e) {
                         throw new RuntimeException("Failed to delete article from database", e);
                     }
                 } else {
-                    response.sendRedirect("index.jsp?emptyFields");
+                    response.sendRedirect("setting.jsp?emptyFields");
                 }
             } else {
-                response.sendRedirect("index.jsp?invalidRequest");
+                response.sendRedirect("setting.jsp?invalidRequest");
             }
         %>
     </body>

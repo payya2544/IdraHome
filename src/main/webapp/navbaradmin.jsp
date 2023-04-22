@@ -1,7 +1,7 @@
 <%-- 
     Document   : navbaradmin
     Created on : Jan 15, 2023, 5:21:32 PM
-    Author     : Yel
+    Author     : paanpun
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -20,7 +20,7 @@
             <nav class="main-menu">
                 <ul>
                     <li>
-                        <a href="../admin/index.jsp/">
+                        <a href="admin.jsp/">
                             <i class="fa fa-home"></i>
                             <span class="nav-text">
                                 Dashboard
@@ -29,7 +29,7 @@
                     </li>
                     
                     <li>
-                        <a href="../admin/settings/index.jsp/">
+                        <a href="setting.jsp/">
                             <i class="fa fa-cogs"></i>
                             <span class="nav-text">
                                 Settings
